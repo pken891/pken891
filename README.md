@@ -17,39 +17,9 @@ I learn how systems break by building them first—from raw TCP protocols to fau
 
 <img src="assets/skills-banner.svg" alt="Technical Skills and Tools" width="100%" />
 
-<br/><br/>
-
-**🛡️ Defense, Auditing & PKI**<br/>
-![OpenSSL](https://img.shields.io/badge/OpenSSL_PKI-090D0A?style=flat-square&logo=openssl&logoColor=18FF62)
-![Wireshark](https://img.shields.io/badge/Wireshark-090D0A?style=flat-square&logo=wireshark&logoColor=18FF62)
-![Syft](https://img.shields.io/badge/Syft_SBOM-090D0A?style=flat-square&logoColor=18FF62)
-![Grype](https://img.shields.io/badge/Grype_Scanner-090D0A?style=flat-square&logoColor=18FF62)
-![HMAC](https://img.shields.io/badge/HMAC--SHA256_Auth-1B3B24?style=flat-square)
-![PID Fencing](https://img.shields.io/badge/PID_Fencing-1B3B24?style=flat-square)
-
 <br/>
 
-**☢️ Offense & Analysis**<br/>
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-090D0A?style=flat-square&logo=kalilinux&logoColor=F6D04D)
-![Packet Analysis](https://img.shields.io/badge/Packet_Analysis-4A1010?style=flat-square)
-![Fault & Tamper Testing](https://img.shields.io/badge/Fault_%26_Tamper_Testing-4A1010?style=flat-square)
-
-<br/>
-
-**⚙️ Systems, Cloud & Networking**<br/>
-![Python](https://img.shields.io/badge/Python-0066B1?style=flat-square&logo=python&logoColor=F6D04D)
-![Linux](https://img.shields.io/badge/Linux-090D0A?style=flat-square&logo=linux&logoColor=18FF62)
-![Windows 11](https://img.shields.io/badge/Windows_11-0066B1?style=flat-square)
-![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0066B1?style=flat-square)
-![Cisco Modeling Labs](https://img.shields.io/badge/Cisco_Modeling_Labs-090D0A?style=flat-square&logo=cisco&logoColor=18FF62)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-090D0A?style=flat-square&logo=virtualbox&logoColor=18FF62)
-
-<br/>
-
-**🤖 Local & Cloud AI**<br/>
-![llama.cpp](https://img.shields.io/badge/llama.cpp_(GGUF)-090D0A?style=flat-square)
-![LiteLLM](https://img.shields.io/badge/LiteLLM-1B3B24?style=flat-square)
-![Streamlit](https://img.shields.io/badge/Streamlit-090D0A?style=flat-square&logo=streamlit&logoColor=18FF62)
+<img src="assets/skills-grid.svg" alt="Tooling Matrix: Defense, Auditing and PKI; Offense and Analysis; Systems, Cloud and Networking; Local and Cloud AI" width="100%" />
 
 </div>
 
@@ -71,26 +41,15 @@ I learn how systems break by building them first—from raw TCP protocols to fau
 
 ---
 
-<!-- SYSTEM ARCHITECTURE SECTION (UNCOMMENT WHEN READY)
-
 <div align="center">
 
 ## 🗺️ System Architecture
 
-[SVG SLOT WHEN READY]:
-<img src="assets/architecture-map.svg" alt="System Architecture diagram showing portable USB llama.cpp node, RAM-aware model routing, LiteLLM cloud fallback, and socket/security lab stack" width="100%" />
-
-| Focus Area | Implementation |
-| :--- | :--- |
-| **Hardware-Aware AI Portability** | Runs from a portable USB drive, checks available host RAM, and serves quantized GGUF models (`Qwen 2.5 Coder 7B` on ≤16GB systems, `Qwen 3 Coder 30B-A3B` on ≥20GB workstations) with zero host installs. |
-| **Custom Protocol Engineering** | Multi-threaded 1v1 Texas Hold'em engine built over raw TCP sockets using binary length-prefixed JSON framing, strict finite state machine validation, and authoritative DNS resolution. |
-| **Split-Brain & Tamper Defense** | Fault-recovery architecture using PID fencing and HMAC-SHA256 checkpoint verification to survive forced process kills and state-file tampering. |
+<img src="assets/architecture-map.svg" alt="System Architecture showing portable USB llama.cpp node routing to Qwen 2.5 Coder 7B or Qwen 3 Coder 30B-A3B, LiteLLM Streamlit dashboard, and network/security lab stack" width="100%" />
 
 </div>
 
 ---
-
--->
 
 <!-- LOCAL & CLOUD AI GATEWAY SECTION (UNCOMMENT WHEN READY)
 

@@ -14,7 +14,7 @@ from pipboy_theme import (
 
 
 def build_projects() -> str:
-    h = 336
+    h = 254
     projects = [
         (
             "ASSEMBLY-AI-TOOL",
@@ -30,13 +30,6 @@ def build_projects() -> str:
             "1v1 raw TCP poker engine: binary JSON framing, FSM logic, multi-subnet Cisco/DNS",
             "github.com/pken891/CS457---Texas-Holdem-Showdown",
         ),
-        (
-            "CS456 // FAULT-TOLERANCE &amp; SECURITY AUDIT",
-            "COMPLETE",
-            GREEN,
-            "Passive redundancy hardened with PID fencing &amp; HMAC-SHA256 checkpoint verification",
-            "github.com/pken891/CS456-Security-Group-Project",
-        ),
     ]
 
     rows = []
@@ -45,7 +38,6 @@ def build_projects() -> str:
         pill_w = len(status) * 7.2 + 20
         pill_x = W - 38 - pill_w
         pulse_cls = "pulse" if color == GOLD else ""
-        # Pip-Boy square marker (filled when active, check-bordered when complete)
         marker = (
             f'<rect x="40" y="{ry + 16}" width="10" height="10" fill="{color}" class="{pulse_cls}"/>'
             if color == GOLD
@@ -65,7 +57,7 @@ def build_projects() -> str:
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}">
 {shared_defs("pr", h)}
-{pipboy_frame("pr", h, "PROJECTS", "FEATURED REPOSITORIES // 3", ("ACTIVE: 2", "PUBLIC SOURCE // CLEAN OPSEC", "COMPLETED: 1"))}
+{pipboy_frame("pr", h, "PROJECTS", "FEATURED REPOSITORIES // 2", ("ACTIVE: 2", "PUBLIC SOURCE // CLEAN OPSEC", "STATUS: IN DEVELOPMENT"))}
 {"".join(rows)}
 </svg>"""
 
