@@ -1,14 +1,12 @@
 <div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=26&duration=3200&pause=1100&color=18FF62&center=true&vCenter=true&width=760&height=55&lines=Hi%2C+I'm+Peter+Kenoian;CS+%26+InfoSec+%40+Colorado+State+University;Building+Resilient+Systems+%26+Local+AI;Systems+Hardening+%26+Network+Security" alt="Typing intro" />
-
-Focused on systems hardening, network security, portable AI infrastructure, and practical IT.<br/>
-I learn how systems break by building them first—from raw TCP protocols to fault-tolerant clusters.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0066B1?style=for-the-badge&logo=linkedin&logoColor=F6D04D)](https://www.linkedin.com/in/peter-kenoian-1051652ba)
-[![GitHub](https://img.shields.io/badge/GitHub-090D0A?style=for-the-badge&logo=github&logoColor=18FF62)](https://github.com/pken891)
-![Based in Fort Collins, CO](https://img.shields.io/badge/Based_in-Fort_Collins,_CO-1B3B24?style=for-the-badge&labelColor=090D0A)
-
+  <div>
+    <img src="assets/hero-banner.svg" alt="Hi, I'm Peter Kenoian — Focused on systems hardening, network security, portable AI infrastructure, and practical IT." width="100%" />
+  </div>
+  <br/>
+  <a href="https://www.linkedin.com/in/peter-kenoian-1051652ba"><img src="https://img.shields.io/badge/LinkedIn-0066B1?style=for-the-badge&logo=linkedin&logoColor=F6D04D" alt="LinkedIn" /></a>
+  <a href="https://github.com/pken891"><img src="https://img.shields.io/badge/GitHub-090D0A?style=for-the-badge&logo=github&logoColor=18FF62" alt="GitHub" /></a>
+  <img src="https://img.shields.io/badge/Based_in-Fort_Collins,_CO-1B3B24?style=for-the-badge&labelColor=090D0A" alt="Based in Fort Collins, CO" />
+</div>
 </div>
 
 ---
@@ -97,8 +95,6 @@ A local-first AI interface engineered for cross-device portability and operation
 ## 💼 Open to Opportunities
 
 <img src="assets/career-card.svg" alt="Open to Opportunities: B.S. Computer Science and Information Systems at Colorado State University; targeting early-career roles in Information Security, Cloud/Software Engineering, and IT Support" width="100%" />
-
-<br/><br/>
 
 [![Hire me on LinkedIn](https://img.shields.io/badge/Hiring%3F_Message_me_on_LinkedIn-0066B1?style=for-the-badge&logo=linkedin&logoColor=F6D04D)](https://www.linkedin.com/in/peter-kenoian-1051652ba)
 
