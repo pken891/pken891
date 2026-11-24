@@ -3,10 +3,11 @@
 
 from pipboy_theme import (
     BG_BOX,
+    GOLD,
     GREEN,
     GREEN_DIM,
+    GREEN_SOFT,
     W,
-    pipboy_frame,
     shared_defs,
     vault_boy_vector,
     write_svg,
@@ -37,11 +38,33 @@ def build_skills_banner() -> str:
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}">
 {shared_defs("sk", h)}
-{pipboy_frame("sk", h, "SKILLS", "PROFILE // TECHNICAL STACK", ("LOC: FORT COLLINS, CO", "COLORADO STATE UNIVERSITY", "SYSTEMS: ONLINE"))}
+  <rect x="2" y="2" width="{W - 4}" height="{h - 4}" rx="12" fill="url(#sk-bg)" stroke="{GREEN_DIM}" stroke-width="2"/>
+  <rect x="6" y="6" width="{W - 12}" height="{h - 12}" rx="9" fill="none" stroke="{GREEN}" stroke-opacity="0.25" stroke-width="1"/>
+  <g clip-path="url(#sk-clip)">
+    <rect x="0" y="0" width="{W}" height="18" fill="{GREEN}" class="sweep"/>
+  </g>
+  <rect x="2" y="2" width="{W - 4}" height="{h - 4}" rx="12" fill="url(#sk-scan)" pointer-events="none"/>
+  <!-- Corner ticks -->
+  <path d="M 14 26 L 14 14 L 26 14" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <path d="M {W - 26} 14 L {W - 14} 14 L {W - 14} 26" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <path d="M 14 {h - 26} L 14 {h - 14} L 26 {h - 14}" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <path d="M {W - 26} {h - 14} L {W - 14} {h - 14} L {W - 14} {h - 26}" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <!-- Top Pip-Boy Tab Bar (SKILLS only) -->
+  <rect x="28" y="12" width="82" height="24" rx="2" fill="{GREEN}" fill-opacity="0.14"/>
+  <path d="M 28 36 L 28 12 L 110 12 L 110 36" fill="none" stroke="{GREEN}" stroke-width="1.5"/>
+  <text x="69" y="28" text-anchor="middle" font-size="11.5" font-weight="700" class="mono" fill="{GREEN}">SKILLS</text>
+  <text x="{W - 28}" y="27" text-anchor="end" font-size="11" class="dim">PROFILE // TECH STACK</text>
+  <line x1="22" y1="36" x2="28" y2="36" stroke="{GREEN}" stroke-opacity="0.7" stroke-width="1.5"/>
+  <line x1="110" y1="36" x2="{W - 22}" y2="36" stroke="{GREEN}" stroke-opacity="0.7" stroke-width="1.5"/>
+  <!-- Pip-Boy 2-segment HUD footer -->
+  <rect x="26" y="{h - 34}" width="400" height="20" rx="2" fill="{GREEN_SOFT}" stroke="{GREEN_DIM}" stroke-width="1"/>
+  <text x="38" y="{h - 20}" font-size="10.5" font-weight="700" class="mono" fill="{GREEN}">COLORADO STATE UNIVERSITY</text>
+  <rect x="434" y="{h - 34}" width="400" height="20" rx="2" fill="{GREEN_SOFT}" stroke="{GREEN_DIM}" stroke-width="1"/>
+  <text x="822" y="{h - 20}" text-anchor="end" font-size="10.5" font-weight="700" class="mono" fill="{GOLD}">SYSTEMS: ONLINE</text>
 {vault_boy_vector(28, 43, 0.80, "sk")}
   <text x="134" y="75" font-size="23" class="title" filter="url(#sk-glow)">TECHNICAL SKILLS &amp; TOOLS<tspan class="blink">_</tspan></text>
-  <text x="134" y="97" font-size="11.5" class="sub">SYSTEMS HARDENING  |  NETWORK SECURITY  |  LOCAL AI</text>
-  <text x="134" y="117" font-size="10.5" class="dim">PETER KENOIAN  //  B.S. COMPUTER SCIENCE &amp; INFO SYSTEMS</text>
+  <text x="134" y="97" font-size="11.5" class="sub">IT SUPPORT | HARDWARE TROUBLESHOOTING | NETWORKING</text>
+  <text x="134" y="117" font-size="10.5" class="dim">PETER KENOIAN // B.S. COMPUTER SCIENCE W/ FOCUS IN CYBERSECURITY</text>
   <line x1="632" y1="48" x2="632" y2="124" stroke="{GREEN_DIM}" stroke-width="1"/>
   {"".join(bars)}
 </svg>"""
