@@ -105,14 +105,12 @@ A local-first AI interface engineered for cross-device portability and operation
 </div>
 
 ---
-
 <div align="center">
-
-<img src="assets/github-stats-banner.svg" alt="GitHub Activity and Stats" width="100%" />
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api?username=pken891&show_icons=true&bg_color=090D0A&title_color=18FF62&text_color=B8E6C1&icon_color=F6D04D&border_color=18FF62" alt="GitHub stats" height="165" />
-<img src="https://streak-stats.demolab.com?user=pken891&background=090D0A&border=18FF62&stroke=18FF62&ring=18FF62&fire=F6D04D&currStreakNum=18FF62&sideNums=18FF62&currStreakLabel=18FF62&sideLabels=B8E6C1&dates=7CA886" alt="GitHub streak" height="165" />
-
+  <div>
+    <img src="assets/github-stats-banner.svg" alt="GitHub Activity and Stats" width="100%" />
+  </div>
+  <div>
+    <img src="https://github-readme-stats.vercel.app/api?username=pken891&show_icons=true&card_width=495&border_radius=10&bg_color=090D0A&title_color=18FF62&text_color=B8E6C1&icon_color=F6D04D&border_color=18FF62" alt="GitHub stats" width="49%" />
+    <img src="https://streak-stats.demolab.com?user=pken891&card_width=495&border_radius=10&background=090D0A&border=18FF62&stroke=18FF62&ring=18FF62&fire=F6D04D&currStreakNum=18FF62&sideNums=18FF62&currStreakLabel=18FF62&sideLabels=B8E6C1&dates=7CA886" alt="GitHub streak" width="49%" />
+  </div>
 </div>
