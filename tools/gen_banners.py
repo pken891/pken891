@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate skills-banner.svg and github-stats-banner.svg."""
+"""Generate hero-banner.svg, skills-banner.svg, and github-stats-banner.svg."""
 
 from pipboy_theme import (
     BG_BOX,
@@ -12,6 +12,61 @@ from pipboy_theme import (
     vault_boy_vector,
     write_svg,
 )
+
+
+def build_hero_banner() -> str:
+    h = 192
+    taglines = [
+        "CS &amp; CYBERSECURITY @ COLORADO STATE UNIVERSITY",
+        "STUDENT IT TECHNICIAN // SYSTEMS &amp; NETWORKING",
+        "BUILDING RESILIENT SYSTEMS &amp; PORTABLE LOCAL AI",
+        "SYSTEMS HARDENING &amp; NETWORK SECURITY",
+    ]
+    rotating_lines = "\n  ".join(
+        f'<text x="430" y="109" text-anchor="middle" font-size="12.5" '
+        f'class="gold rot" style="animation-delay: {i * 3}s;">&gt; {line}</text>'
+        for i, line in enumerate(taglines)
+    )
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}">
+{shared_defs("hr", h)}
+  <style>
+    @keyframes cycle {{
+      0% {{ opacity: 0; transform: translateY(4px); }}
+      4% {{ opacity: 1; transform: translateY(0); }}
+      22% {{ opacity: 1; transform: translateY(0); }}
+      26% {{ opacity: 0; transform: translateY(-4px); }}
+      100% {{ opacity: 0; transform: translateY(-4px); }}
+    }}
+    .rot {{ opacity: 0; animation: cycle 12s ease-in-out infinite; }}
+  </style>
+  <rect x="2" y="2" width="{W - 4}" height="{h - 4}" rx="12" fill="url(#hr-bg)" stroke="{GREEN_DIM}" stroke-width="2"/>
+  <rect x="6" y="6" width="{W - 12}" height="{h - 12}" rx="9" fill="none" stroke="{GREEN}" stroke-opacity="0.25" stroke-width="1"/>
+  <g clip-path="url(#hr-clip)">
+    <rect x="0" y="0" width="{W}" height="18" fill="{GREEN}" class="sweep"/>
+  </g>
+  <rect x="2" y="2" width="{W - 4}" height="{h - 4}" rx="12" fill="url(#hr-scan)" pointer-events="none"/>
+  <!-- Corner ticks -->
+  <path d="M 14 26 L 14 14 L 26 14" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <path d="M {W - 26} 14 L {W - 14} 14 L {W - 14} 26" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <path d="M 14 {h - 26} L 14 {h - 14} L 26 {h - 14}" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <path d="M {W - 26} {h - 14} L {W - 14} {h - 14} L {W - 14} {h - 26}" fill="none" stroke="{GREEN}" stroke-width="2"/>
+  <!-- Top Tab Bar -->
+  <rect x="28" y="12" width="82" height="24" rx="2" fill="{GREEN}" fill-opacity="0.14"/>
+  <path d="M 28 36 L 28 12 L 110 12 L 110 36" fill="none" stroke="{GREEN}" stroke-width="1.5"/>
+  <text x="69" y="28" text-anchor="middle" font-size="11.5" font-weight="700" class="mono" fill="{GREEN}">HOME</text>
+  <circle cx="{W - 166}" cy="23" r="3.5" fill="{GREEN}" class="pulse"/>
+  <text x="{W - 28}" y="27" text-anchor="end" font-size="11" class="dim">PORTFOLIO // OVERVIEW</text>
+  <line x1="22" y1="36" x2="28" y2="36" stroke="{GREEN}" stroke-opacity="0.7" stroke-width="1.5"/>
+  <line x1="110" y1="36" x2="{W - 22}" y2="36" stroke="{GREEN}" stroke-opacity="0.7" stroke-width="1.5"/>
+  <!-- Hero Title & Animated Tagline -->
+  <text x="430" y="81" text-anchor="middle" font-size="28" class="title" filter="url(#hr-glow)">HI, I&apos;M PETER KENOIAN<tspan class="blink">_</tspan></text>
+  {rotating_lines}
+  <line x1="110" y1="124" x2="{W - 110}" y2="124" stroke="{GREEN_DIM}" stroke-width="1"/>
+  <!-- Bio Lines -->
+  <text x="430" y="147" text-anchor="middle" font-size="11.8" class="sub">Focused on systems hardening, network security, portable AI infrastructure, and practical IT.</text>
+  <text x="430" y="168" text-anchor="middle" font-size="11.8" class="sub">I learn how systems break by building them first—from raw TCP protocols to fault-tolerant clusters.</text>
+</svg>"""
 
 
 def build_skills_banner() -> str:
@@ -89,6 +144,7 @@ def build_stats_banner() -> str:
 
 
 def generate() -> None:
+    write_svg("hero-banner.svg", build_hero_banner())
     write_svg("skills-banner.svg", build_skills_banner())
     write_svg("github-stats-banner.svg", build_stats_banner())
 

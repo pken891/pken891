@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 192" width="860" height="192">
+  <defs>
+    <linearGradient id="hr-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B160E"/>
+      <stop offset="100%" stop-color="#060B07"/>
+    </linearGradient>
+    <pattern id="hr-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000000" fill-opacity="0.24"/>
+    </pattern>
+    <filter id="hr-glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.0" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="hr-clip">
+      <rect x="2" y="2" width="856" height="188" rx="12"/>
+    </clipPath>
+  </defs>
+  <style>
+    .mono { font-family: 'Courier New', Consolas, 'Liberation Mono', monospace; }
+    .title { font-family: 'Courier New', Consolas, 'Liberation Mono', monospace; font-weight: 700; fill: #18FF62; letter-spacing: 1.2px; }
+    .sub { font-family: 'Courier New', Consolas, 'Liberation Mono', monospace; fill: #B8E6C1; }
+    .dim { font-family: 'Courier New', Consolas, 'Liberation Mono', monospace; fill: #6FA67D; }
+    .gold { font-family: 'Courier New', Consolas, 'Liberation Mono', monospace; font-weight: 700; fill: #F6D04D; }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.32; } }
+    @keyframes sweep {
+      0% { transform: translateY(-20px); opacity: 0; }
+      15% { opacity: 0.12; }
+      85% { opacity: 0.12; }
+      100% { transform: translateY(192px); opacity: 0; }
+    }
+    .blink { animation: blink 1.1s steps(1) infinite; }
+    .pulse { animation: pulse 2.2s ease-in-out infinite; }
+    .sweep { animation: sweep 5.8s linear infinite; }
+  </style>
+  <style>
+    @keyframes cycle {
+      0% { opacity: 0; transform: translateY(4px); }
+      4% { opacity: 1; transform: translateY(0); }
+      22% { opacity: 1; transform: translateY(0); }
+      26% { opacity: 0; transform: translateY(-4px); }
+      100% { opacity: 0; transform: translateY(-4px); }
+    }
+    .rot { opacity: 0; animation: cycle 12s ease-in-out infinite; }
+  </style>
+  <rect x="2" y="2" width="856" height="188" rx="12" fill="url(#hr-bg)" stroke="#1E4D2B" stroke-width="2"/>
+  <rect x="6" y="6" width="848" height="180" rx="9" fill="none" stroke="#18FF62" stroke-opacity="0.25" stroke-width="1"/>
+  <g clip-path="url(#hr-clip)">
+    <rect x="0" y="0" width="860" height="18" fill="#18FF62" class="sweep"/>
+  </g>
+  <rect x="2" y="2" width="856" height="188" rx="12" fill="url(#hr-scan)" pointer-events="none"/>
+  <!-- Corner ticks -->
+  <path d="M 14 26 L 14 14 L 26 14" fill="none" stroke="#18FF62" stroke-width="2"/>
+  <path d="M 834 14 L 846 14 L 846 26" fill="none" stroke="#18FF62" stroke-width="2"/>
+  <path d="M 14 166 L 14 178 L 26 178" fill="none" stroke="#18FF62" stroke-width="2"/>
+  <path d="M 834 178 L 846 178 L 846 166" fill="none" stroke="#18FF62" stroke-width="2"/>
+  <!-- Top Tab Bar -->
+  <rect x="28" y="12" width="82" height="24" rx="2" fill="#18FF62" fill-opacity="0.14"/>
+  <path d="M 28 36 L 28 12 L 110 12 L 110 36" fill="none" stroke="#18FF62" stroke-width="1.5"/>
+  <text x="69" y="28" text-anchor="middle" font-size="11.5" font-weight="700" class="mono" fill="#18FF62">HOME</text>
+  <circle cx="694" cy="23" r="3.5" fill="#18FF62" class="pulse"/>
+  <text x="832" y="27" text-anchor="end" font-size="11" class="dim">PORTFOLIO // OVERVIEW</text>
+  <line x1="22" y1="36" x2="28" y2="36" stroke="#18FF62" stroke-opacity="0.7" stroke-width="1.5"/>
+  <line x1="110" y1="36" x2="838" y2="36" stroke="#18FF62" stroke-opacity="0.7" stroke-width="1.5"/>
+  <!-- Hero Title & Animated Tagline -->
+  <text x="430" y="81" text-anchor="middle" font-size="28" class="title" filter="url(#hr-glow)">HI, I&apos;M PETER KENOIAN<tspan class="blink">_</tspan></text>
+  <text x="430" y="109" text-anchor="middle" font-size="12.5" class="gold rot" style="animation-delay: 0s;">&gt; CS &amp; CYBERSECURITY @ COLORADO STATE UNIVERSITY</text>
+  <text x="430" y="109" text-anchor="middle" font-size="12.5" class="gold rot" style="animation-delay: 3s;">&gt; STUDENT IT TECHNICIAN // SYSTEMS &amp; NETWORKING</text>
+  <text x="430" y="109" text-anchor="middle" font-size="12.5" class="gold rot" style="animation-delay: 6s;">&gt; BUILDING RESILIENT SYSTEMS &amp; PORTABLE LOCAL AI</text>
+  <text x="430" y="109" text-anchor="middle" font-size="12.5" class="gold rot" style="animation-delay: 9s;">&gt; SYSTEMS HARDENING &amp; NETWORK SECURITY</text>
+  <line x1="110" y1="124" x2="750" y2="124" stroke="#1E4D2B" stroke-width="1"/>
+  <!-- Bio Lines -->
+  <text x="430" y="147" text-anchor="middle" font-size="11.8" class="sub">Focused on systems hardening, network security, portable AI infrastructure, and practical IT.</text>
+  <text x="430" y="168" text-anchor="middle" font-size="11.8" class="sub">I learn how systems break by building them first—from raw TCP protocols to fault-tolerant clusters.</text>
+</svg>
