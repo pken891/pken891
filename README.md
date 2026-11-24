@@ -15,8 +15,9 @@ I learn how systems break by building them first—from raw TCP protocols to fau
 
 <div align="center">
 
-<!-- UNCOMMENT WHEN READY: <img src="assets/skills-banner.svg" alt="Technical Skills and Tools" width="100%" /> -->
-## 🛠️ Technical Skills & Tools
+<img src="assets/skills-banner.svg" alt="Technical Skills and Tools" width="100%" />
+
+<br/><br/>
 
 **🛡️ Defense, Auditing & PKI**<br/>
 ![OpenSSL](https://img.shields.io/badge/OpenSSL_PKI-090D0A?style=flat-square&logo=openssl&logoColor=18FF62)
@@ -58,15 +59,9 @@ I learn how systems break by building them first—from raw TCP protocols to fau
 
 ## 🎯 Featured Projects
 
-<!-- UNCOMMENT WHEN READY: <img src="assets/projects.svg" alt="Featured Projects: Assembly-AI-Tool, CS457 Texas Hold'em Showdown, CS456 Fault-Tolerance and Red-Team Security Audit" width="100%" /> -->
+<img src="assets/projects.svg" alt="Featured Projects: Assembly-AI-Tool (In Progress), CS457 Texas Hold'em Showdown (Work in Progress), CS456 Fault-Tolerance and Security Audit (Complete)" width="100%" />
 
-| Project | Status | Overview |
-| :--- | :---: | :--- |
-| **Assembly-AI-Tool** | 🟡 In Progress | Hybrid local + cloud AI desktop dashboard pairing `LiteLLM` with a portable USB `llama.cpp` backend. |
-| **CS457 — Texas Hold'em Showdown** | 🟡 Work in Progress | Multi-threaded 1v1 raw TCP poker engine with binary length-prefixed JSON framing, FSM validation, and authoritative DNS. |
-| **CS456 — Fault-Tolerance & Security Audit** | 🟢 Complete | Passive redundancy system hardened with PID fencing and HMAC-SHA256 checkpoint verification against split-brain and tampering. |
-
-<br/>
+<br/><br/>
 
 [![Assembly-AI-Tool](https://img.shields.io/badge/View_Repo:_Assembly--AI--Tool-090D0A?style=for-the-badge&logo=github&logoColor=F6D04D)](https://github.com/pken891/Assembly-AI-Tool)
 [![Texas Hold'em](https://img.shields.io/badge/View_Repo:_Texas--Holdem--Showdown-090D0A?style=for-the-badge&logo=github&logoColor=18FF62)](https://github.com/pken891/CS457---Texas-Holdem-Showdown)
@@ -138,4 +133,27 @@ A local-first AI interface engineered for cross-device portability and operation
 
 -->
 
-<div align
+<div align="center">
+
+## 💼 Open to Opportunities
+
+<img src="assets/career-card.svg" alt="Open to Opportunities: B.S. Computer Science and Information Systems at Colorado State University; targeting early-career roles in Information Security, Cloud/Software Engineering, and IT Support" width="100%" />
+
+<br/><br/>
+
+[![Hire me on LinkedIn](https://img.shields.io/badge/Hiring%3F_Message_me_on_LinkedIn-0066B1?style=for-the-badge&logo=linkedin&logoColor=F6D04D)](https://www.linkedin.com/in/peter-kenoian-1051652ba)
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="assets/github-stats-banner.svg" alt="GitHub Activity and Stats" width="100%" />
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=pken891&show_icons=true&bg_color=090D0A&title_color=18FF62&text_color=B8E6C1&icon_color=F6D04D&border_color=18FF62" alt="GitHub stats" height="165" />
+<img src="https://streak-stats.demolab.com?user=pken891&background=090D0A&border=18FF62&stroke=18FF62&ring=18FF62&fire=F6D04D&currStreakNum=18FF62&sideNums=18FF62&currStreakLabel=18FF62&sideLabels=B8E6C1&dates=7CA886" alt="GitHub streak" height="165" />
+
+</div>
