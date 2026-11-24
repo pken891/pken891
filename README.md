@@ -41,57 +41,6 @@
 
 <div align="center">
 
-## 🗺️ System Architecture
-
-<img src="assets/architecture-map.svg" alt="System Architecture showing portable USB llama.cpp node routing to Qwen 2.5 Coder 7B or Qwen 3 Coder 30B-A3B, LiteLLM Streamlit dashboard, and network/security lab stack" width="100%" />
-
-</div>
-
----
-
-<!-- LOCAL & CLOUD AI GATEWAY SECTION (UNCOMMENT WHEN READY)
-
-<div align="center">
-
-## 🖥️ Local & Cloud AI Gateway (`Assembly-AI-Tool`)
-
-[SVG SLOT WHEN READY]:
-<img src="assets/assembly-ai.svg" alt="Assembly-AI-Tool pipeline: host RAM detection, LiteLLM routing, portable USB llama.cpp server, and cloud API fallback" width="100%" />
-
-A local-first AI interface engineered for cross-device portability and operational security.
-
-| Capability | Details |
-| :--- | :--- |
-| **Unified Local + Cloud Routing** | Manages a portable `llama.cpp` server and online APIs through `LiteLLM` inside a green/red retro CRT dashboard. |
-| **Operational Security** | Keeps sensitive code and configs local when needed, backed by strict pre-commit API key and metadata scrubbing. |
-| **Planned Additions** | Real-time model loading progress bar, expanded token-usage analytics, and local file uploads. |
-
-> *Running models locally keeps sensitive code and API keys under your own control.*
-
-<details>
-<summary>Assembly-AI-Tool roadmap</summary>
-
-<br/>
-
-| Status | Milestone |
-| :---: | :--- |
-| ✅ | Portable USB `llama.cpp` server across Windows hosts |
-| ✅ | RAM-tiered GGUF model routing (`7B` vs `30B-A3B`) |
-| ✅ | Retro green/red web dashboard with `LiteLLM` routing |
-| ⬜ | Real-time model loading progress bar |
-| ⬜ | Expanded per-conversation & cumulative token analytics |
-| ⬜ | Local file upload & context ingestion |
-
-</details>
-
-</div>
-
----
-
--->
-
-<div align="center">
-
 ## 💼 Open to Opportunities
 
 <img src="assets/career-card.svg" alt="Open to Opportunities: B.S. Computer Science and Information Systems at Colorado State University; targeting early-career roles in Information Security, Cloud/Software Engineering, and IT Support" width="100%" />
